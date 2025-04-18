@@ -7,7 +7,7 @@ const takeCharacters = (s, k) => {
   const cnt = {
     a: 0,
     b: 0,
-    c: 0,
+    c: 0
   };
   const len = s.len;
   let ans = len;

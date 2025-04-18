@@ -1,4 +1,3 @@
-
 const Singleton = (() => {
   const instance = null;
   function User(name, age) {
@@ -12,4 +11,4 @@ const Singleton = (() => {
     return instance;
   };
 })();
-console.log(Singleton())
+console.log(Singleton());

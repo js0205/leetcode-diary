@@ -10,7 +10,7 @@ class User {
     this.role = role;
     this.pages = pages;
   }
-  static UserFactory = role => {
+  static UserFactory = (role) => {
     switch (role) {
       case 'superadmin':
         return new User('superadmin', ['home', 1, 2, 3]);

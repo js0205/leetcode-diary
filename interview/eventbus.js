@@ -16,9 +16,7 @@ class EventBus {
   }
   unsubscribe(event, callback) {
     if (this.subscribers[event]) {
-      this.subscribers[event] = this.subscribers[event].filter(
-        (cb) => cb !== callback
-      );
+      this.subscribers[event] = this.subscribers[event].filter((cb) => cb !== callback);
     }
   }
 }

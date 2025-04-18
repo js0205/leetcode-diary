@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,11 +13,11 @@
       const PubSub = {
         list: [],
         publish() {
-          this.list.forEach(item => item());
+          this.list.forEach((item) => item());
         },
         subscribe(cb) {
           this.list.push(cb);
-        },
+        }
       };
       function a() {
         console.log('a');

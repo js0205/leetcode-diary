@@ -1,6 +1,5 @@
 class SubPub {
   constructor() {
-    this.msg = {}
+    this.msg = {};
   }
-  
 }

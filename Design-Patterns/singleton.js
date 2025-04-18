@@ -8,4 +8,4 @@ class Singleton {
     return Singleton.instance;
   }
 }
-console.log(new Singleton(11, 100) === new Singleton('12', 120))
+console.log(new Singleton(11, 100) === new Singleton('12', 120));

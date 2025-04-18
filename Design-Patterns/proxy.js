@@ -9,7 +9,7 @@ class StarProxy {
   }
   talk(price) {
     if (price >= 10000) {
-      this.superStar.play()
+      this.superStar.play();
     } else {
       throw new Error('price is too low');
     }
@@ -17,5 +17,5 @@ class StarProxy {
 }
 
 setTimeout(() => {
-  console.log('time out')
+  console.log('time out');
 }, 10000000);

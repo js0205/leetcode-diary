@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
     <script>
       const star = {
         name: '11',
-        workprice: 10000,
+        workprice: 10000
       };
       const proxy = new Proxy(star, {
         get(target, key) {
@@ -27,7 +27,7 @@
               throw new Error("can't");
             }
           }
-        },
+        }
       });
     </script>
   </body>

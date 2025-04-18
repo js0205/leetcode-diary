@@ -1,15 +1,12 @@
 class sub {
   constructor() {
-    this.observers = []
+    this.observers = [];
   }
   add(observer) {
-    this.observers.push(observer)
+    this.observers.push(observer);
   }
   remove(observer) {
-    this.boservers = this.observers.filter(o => o !== observer)
+    this.boservers = this.observers.filter((o) => o !== observer);
   }
-  notify() {
-
-  }
-
+  notify() {}
 }

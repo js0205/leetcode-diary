@@ -3,14 +3,14 @@ const dirs = [
     [-1, 0],
     [1, 0],
     [0, -1],
-    [0, 1],
+    [0, 1]
   ],
   [
     [-1, -1],
     [-1, 1],
     [1, -1],
-    [1, 1],
-  ],
+    [1, 1]
+  ]
 ];
 
 class NeighborSum {
@@ -41,12 +41,7 @@ class NeighborSum {
     for (const [dx, dy] of dirs[idx]) {
       const nx = x + dx;
       const ny = y + dy;
-      if (
-        nx >= 0 &&
-        nx < this.grid.length &&
-        ny >= 0 &&
-        ny < this.grid[0].length
-      ) {
+      if (nx >= 0 && nx < this.grid.length && ny >= 0 && ny < this.grid[0].length) {
         sum += this.grid[nx][ny];
       }
     }

@@ -2,14 +2,8 @@ const shoppingOffers = (p: number[], s: number[][], ns: number[]) => {
   const memo = new Map<string, number>();
 
   // 记忆化搜索计算满足购物清单所需花费的最低价格
-  const dfs = (
-    pr: number[],
-    sp: number[][],
-    cuN: number[],
-    fSp: number[][],
-    n: number
-  ): number => {
-    const key = cuN.join(",");
+  const dfs = (pr: number[], sp: number[][], cuN: number[], fSp: number[][], n: number): number => {
+    const key = cuN.join(',');
     if (!memo.has(key)) {
       let mP = 0;
       for (let i = 0; i < n; ++i) {

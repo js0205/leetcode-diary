@@ -6,7 +6,7 @@ class EventEmitter {
   emit(event, ...args) {
     const cbs = this.events[event];
     if (!cbs) {
-      console.log("no this event");
+      console.log('no this event');
       return this;
     }
     cbs.forEach((cb) => {

@@ -9,9 +9,9 @@ const numberOfPairs = (nums1, nums2, k) => {
   for (const i of nums1) {
     for (const j of nums2) {
       if (i % (j * k) === 0) {
-        n++
+        n++;
       }
     }
   }
-  return n
+  return n;
 };

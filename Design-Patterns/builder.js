@@ -3,7 +3,7 @@ class Navbar {
     console.log('navbar-init');
   }
   getData() {
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       setTimeout(() => {
         resolve('navbar-getData');
       }, 1000);
@@ -18,7 +18,7 @@ class List {
     console.log('List-init');
   }
   getData() {
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       setTimeout(() => {
         resolve('List-getData');
       }, 1000);
@@ -31,12 +31,12 @@ class List {
 
 class Creator {
   async startBuild(builder) {
-    await builder.init()
-    await builder.getData()
-    await builder.render()
+    await builder.init();
+    await builder.getData();
+    await builder.render();
   }
 }
 
-const op = new Creator()
-op.startBuild(new List())
-op.startBuild(new Navbar())
+const op = new Creator();
+op.startBuild(new List());
+op.startBuild(new Navbar());

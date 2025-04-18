@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,15 +9,15 @@
     <script>
       // 实现
       const strategy = {
-        a: salary => {
+        a: (salary) => {
           return salary * 4;
         },
-        b: salary => {
+        b: (salary) => {
           return salary * 3;
         },
-        c: salary => {
+        c: (salary) => {
           return salary * 2;
-        },
+        }
       };
       // 责任
       function calBonus(level, salary) {

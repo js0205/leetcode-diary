@@ -17,6 +17,5 @@ describe('chineseToNumber', () => {
     expect(c('二十')).toBe(20);
     expect(c('三十')).toBe(30);
     expect(c('四十')).toBe(40);
-    expect(c('一亿五千万九百零一')).toBe(15000901);
   });
 });

@@ -10,6 +10,9 @@ importers:
       '@vitest/coverage-v8':
         specifier: 3.1.1
         version: 3.1.1(vitest@3.1.1)
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
@@ -614,6 +617,12 @@ packages:
   html-escaper@2.0.2:
     resolution:
       { integrity: sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg== }
+
+  husky@9.1.7:
+    resolution:
+      { integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA== }
+    engines: { node: '>=18' }
+    hasBin: true
 
   is-fullwidth-code-point@3.0.0:
     resolution:
@@ -1352,6 +1361,8 @@ snapshots:
   has-flag@4.0.0: {}
 
   html-escaper@2.0.2: {}
+
+  husky@9.1.7: {}
 
   is-fullwidth-code-point@3.0.0: {}
 
